@@ -14,7 +14,7 @@ jobs:
       - uses: appleboy/ssh-actions@v1
         with:
           host: ${{ secrets.HOST_IP }}
-          username: ${{ secerts.USERNAME }}
+          username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           script: |
             if [! -d ~/Three-tier-app-Devops ]; then
