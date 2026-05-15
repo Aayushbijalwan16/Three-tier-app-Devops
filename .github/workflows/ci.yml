@@ -30,4 +30,3 @@ jobs:
                      push: true
                      tags: |
                        ${{ secrets.DOCKERHUB_USERNAME }}/skillpulse-backend:latest
-
