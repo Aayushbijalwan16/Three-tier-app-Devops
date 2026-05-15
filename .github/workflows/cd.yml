@@ -11,7 +11,7 @@ jobs:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
-      - uses: appleboy/ssh-actions@v1
+      - uses: appleboy/ssh-action@v1
         with:
           host: ${{ secrets.HOST_IP }}
           username: ${{ secrets.USERNAME }}
